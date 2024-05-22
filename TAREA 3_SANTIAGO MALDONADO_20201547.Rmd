@@ -1,0 +1,57 @@
+---
+title: "TAREA 3_SANTIAGO MALDONADO_20201547"
+author: "Santiago Maldonado Vizcarra"
+date: "2024-05-22"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+  html_document:
+    df_print: paged
+---
+
+```{r}
+# Ejemplo: 
+```
+
+```{r}
+rm(list = ls()) 
+library(igraph)
+```
+
+```{r}
+dG=read_graph("dG.gml", format = "gml")
+```
+
+```{r}
+summary(dG)
+```
+
+```{r}
+plot(dG, edge.arrow.size=.4,vertex.label=V(dG)$label,edge.curved=.1)
+```
+
+```{r}
+# Continuación del punto 1.4 - Ejercicio Élites: 
+```
+
+```{r}
+dG=read_graph("C:/Users/LENOVO/OneDrive/Documentos/ASIE/graphdata/EliteNet.gml", format = "gml")
+```
+```{r}
+summary(dG)
+```
+```{r}
+plot(dG, edge.arrow.size=.4,vertex.label=V(dG)$label,edge.curved=.1)
+```
+
+
+
+
+
+
+
+
+
+
+
